@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat and Meeting</title>
+    <link rel="stylesheet" href="StyleSheet.css">
+</head>
+<body>
+    <div class="chat-box" id="chatBox">
+        <!-- Chat messages will appear here -->
+    </div>
+    <div class="buttons">
+        <button onclick="meetNow()">Meet Now</button>
+        <button onclick="openScheduleModal()">Schedule a Meeting</button>
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal" id="scheduleModal">
+        <h3>Schedule a Meeting</h3>
+        <label for="meetingDate">Select Date:</label>
+        <input type="date" id="meetingDate"><br>
+        <label for="meetingTime">Enter Time:</label>
+        <input type="time" id="meetingTime"><br>
+        <button onclick="scheduleMeeting()">Schedule</button>
+        <button onclick="closeScheduleModal()">Cancel</button>
+    </div>
+
+    <script src="Functions.js"></script>
+</body>
+</html>
